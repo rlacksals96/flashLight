@@ -59,16 +59,7 @@ class ViewController: UIViewController {
         isOn = !isOn
         clickSound?.play()
         toggleTorch(on: isOn)
-//        if isOn==true{
-//            switchbutton.setImage(#imageLiteral(resourceName: "onSwitch"), for: .normal)
-//            flashImageView.image=UIImage(named: "onBG")
-//
-//        }
-//        else{
-//            switchbutton.setImage(#imageLiteral(resourceName: "offSwitch"), for: .normal)
-//            flashImageView.image=#imageLiteral(resourceName: "offBG")
-//
-//        }
+      
         flashImageView.image=isOn ? #imageLiteral(resourceName: "onBG") :#imageLiteral(resourceName: "offBG")
         switchButton.setImage(isOn ? #imageLiteral(resourceName: "onSwitch") : #imageLiteral(resourceName: "offSwitch"), for: .normal)
        
